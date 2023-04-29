@@ -1,0 +1,1 @@
+package com.example.leparisien.ui.screensimport androidx.compose.material.Scaffoldimport androidx.compose.runtime.Composable@Composablefun Screen5() {//créer un texte "Screen5"}
