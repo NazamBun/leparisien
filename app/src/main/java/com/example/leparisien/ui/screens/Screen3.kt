@@ -1,1 +1,1 @@
-package com.example.leparisien.ui.screensimport androidx.compose.runtime.Composable@Composablefun Screen3() {}
+package com.example.leparisien.ui.screensimport androidx.compose.runtime.Composable@Composablefun Screen3() {}
