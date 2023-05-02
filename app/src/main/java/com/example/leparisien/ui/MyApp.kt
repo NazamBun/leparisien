@@ -11,6 +11,7 @@ import com.example.leparisien.R
 import com.example.leparisien.ui.components.BottomNavBar
 import com.example.leparisien.ui.components.MyTopAppBar
 import com.example.leparisien.ui.screens.NavGraph
+
 //test commit
 @Composable
 fun MyApp() {
@@ -31,6 +32,8 @@ fun MyApp() {
                 .padding(paddingValues)
         ) {
             NavGraph(navController = navController)
+
+
         }
     }
 }
