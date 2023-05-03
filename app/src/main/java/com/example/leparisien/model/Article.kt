@@ -1,1 +1,1 @@
-package com.example.leparisien.modelimport androidx.annotation.DrawableResdata class Article(    val title: String,    @DrawableRes val image: Int,    val description : String)
+package com.example.leparisien.modelimport androidx.annotation.DrawableResdata class Article(    val title: String,    @DrawableRes val image: Int)
