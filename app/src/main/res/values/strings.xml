@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">LeParisien</string>
+    <string name="mavachou">Mort de MavaChou : « Je ne serai pas seul sur le banc des accusés », promet son ex-mari </string>
+    <string name="fonds">Fonds Marianne : le parquet national financier ouvre une information judiciaire</string>
+    <string name="arthur">Réforme du lycée pro : stages rémunérés, filières… ce qu’il faut retenir des annonces de Macron</string>
+    <string name="bernard">Assaut du Capitole aux États-Unis : des membres d’un groupe d’extrême droite reconnus coupables de « sédition »</string>
+    <string name="celia">Célia</string>
+    <string name="clara">Clara</string>
+    <string name="jose">José</string>
+    <string name="leo">Léo</string>
+    <string name="maxime">Maxime</string>
+    <string name="nico">Nico</string>
+    <string name="pierre">Pierre</string>
+    <string name="simon">Simon</string>
+    <string name="vanessa">Vanessa</string>
 </resources>

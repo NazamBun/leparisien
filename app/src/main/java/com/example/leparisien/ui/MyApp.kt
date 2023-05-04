@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
 import com.example.leparisien.R
 import com.example.leparisien.ui.components.BottomNavBar
@@ -32,9 +33,15 @@ fun MyApp() {
                 .padding(paddingValues)
         ) {
             NavGraph(navController = navController)
-    
+
 
         }
     }
+}
+
+@Preview(showBackground = true, device = "id:pixel_6_pro", showSystemUi = true)
+@Composable
+fun DefaultPreview() {
+    MyApp()
 }
 

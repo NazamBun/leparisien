@@ -16,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -25,14 +26,15 @@ import com.example.leparisien.R
 import com.example.leparisien.model.Article
 
 @Composable
-fun ALaUneLazyColumn(article: Article) {
-    val customFont = FontFamily(androidx.compose.ui.text.font.Font(R.font.robotoregular))
+fun ListTile(article: Article) {
+
+    val customFont = FontFamily(androidx.compose.ui.text.font.Font(R.font.robotobold))
 
     Column(modifier = Modifier.fillMaxWidth()) {
         Divider(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp)
+                .padding(8.dp)
         )
         Row(
             modifier = Modifier
@@ -42,20 +44,20 @@ fun ALaUneLazyColumn(article: Article) {
                     start = 16.dp,
                     end = 16.dp
                 )
-                .weight(1f)
+            //.weight(1f)
 
         ) {
             Text(
-                text = article.title,
+                text = stringResource(id = article.title),
                 modifier = Modifier
                     .padding(end = 16.dp)
                     .weight(1f),
-                style = MaterialTheme.typography.subtitle2,
+
                 fontFamily = customFont,
                 maxLines = 3,
                 softWrap = true,
-                fontWeight = FontWeight.SemiBold,
-                fontSize = 13.sp,
+                fontWeight = FontWeight.Bold,
+                fontSize = 16.sp,
             )
 
             Image(
@@ -70,21 +72,27 @@ fun ALaUneLazyColumn(article: Article) {
             )
         }
     }
+}
 
 
+@Composable
+fun SimpleList(article: List<Article>) {
+    Column {
+        for (article in article) {
+            ListTile(article = article)
+            Divider()
+        }
+    }
 }
 
 @Preview(showBackground = true, device = "id:pixel_6_pro", showSystemUi = true)
 @Composable
-fun ALaUneLazyColumnPreview() {
+fun ListTileColumnPreview() {
     val article =
-        Article(
-            title = "Entre Messi et le PSG, la procédure de divorce est lancée",
-            image = R.drawable.kiki
-        )
+        Article(title = R.string.mavachou, image = R.drawable.kiki)
 
     MaterialTheme {
-        ALaUneLazyColumn(
+        ListTile(
             article = article,
         )
     }
