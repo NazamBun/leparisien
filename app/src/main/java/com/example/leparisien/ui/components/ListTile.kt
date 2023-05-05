@@ -34,7 +34,7 @@ fun ListTile(article: Article) {
         Divider(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(8.dp)
+                .padding(top = 8.dp, start = 16.dp)
         )
         Row(
             modifier = Modifier
@@ -66,7 +66,7 @@ fun ListTile(article: Article) {
                     .height(80.dp)
                     .width(150.dp)
                     .weight(0.5f)
-                    .clip(RoundedCornerShape(5.dp)),
+                    .clip(RoundedCornerShape(10.dp)),
                 contentDescription = "",
                 contentScale = ContentScale.Crop
             )
@@ -89,7 +89,7 @@ fun SimpleList(article: List<Article>) {
 @Composable
 fun ListTileColumnPreview() {
     val article =
-        Article(title = R.string.mavachou, image = R.drawable.kiki)
+        Article(title = R.string.mavachou, image = R.drawable.mavachou)
 
     MaterialTheme {
         ListTile(
